@@ -5,8 +5,7 @@ cache:
   directories:
   - node_modules
 script:
-  - npm run build
-  - npm run export
+  - npm run deploy
   - touch out/.nojekyll
 deploy:
   provider: pages
@@ -14,4 +13,4 @@ deploy:
   github_token: $github_token
   local_dir: out
   on:
-    branch: main
+    branch: gh_pages
