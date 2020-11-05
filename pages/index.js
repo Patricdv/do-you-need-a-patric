@@ -31,7 +31,11 @@ export default function Home() {
 
         <div className="pump-up">YES YOU DO!</div>
 
-        <img src="/img/patric-sliding.png" className="patric-sliding" />
+        <img
+          src={require('./images/patric-sliding.png')}
+          className="patric-sliding"
+          alt="Me sliding throughout the page"
+        />
       </main>
 
       <img />
