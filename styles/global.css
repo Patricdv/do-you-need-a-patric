@@ -1,0 +1,154 @@
+body {
+  font-size: 12px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 3em 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  background-color: var(--dark);
+  animation: colorUp 0.5s linear forwards;
+  animation-delay: 3.5s;
+}
+
+.wavy {
+  text-align: center;
+  font-size: 4rem;
+  transform: scale(1, 1.5) translateX(100vw);
+  font-weight: bold;
+  z-index: 1;
+  width: 100%;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  animation: comingIn 3s linear forwards;
+  font-family: Impact, sans-serif;
+  color: #24c0fd;
+  -webkit-text-stroke: 0.01em #0000aa;
+  filter: progid:DXImageTransform.Microsoft.Glow(Color=#0000aa,Strength=1);
+  text-shadow: 0.13em -0.13em 0px #0000aa;
+  letter-spacing: -0.05em;
+}
+
+.wavy span {
+  position: relative;
+  display: inline-block;
+  animation: wavering 2s ease-in-out infinite;
+  animation-delay: var(--i);
+}
+
+.pump-up {
+  transform: scale(0);
+  font-family: Impact, sans-serif;
+  font-size: 6rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem 0;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fffa28;
+  background: radial-gradient(ellipse at center, #fffa28 0%, #ec8a39 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffa28', endColorstr='#ec8a39', GradientType=1);
+  animation: scaleUp 1s ease forwards;
+  animation-delay: 3.2s;
+}
+
+.late-content {
+  transform: scale(0);
+  font-size: 2rem;
+  animation: scaleUp 1s ease forwards;
+  animation-delay: 4.2s;
+  color: #fff;
+}
+
+.late-content ul li {
+  opacity: 0;
+  transform: translateX(-100px);
+  animation: slideIn 1s ease forwards;
+  animation-delay: calc(5.2s + var(--i));
+}
+
+.patric-sliding {
+  position: fixed;
+  right: 100vw;
+  bottom: 0;
+  width: 468px;
+  height: 320px;
+  z-index: 1;
+  animation: patricSlidingIn 2s ease-out forwards;
+  animation-delay: 3.2s;
+}
+
+@keyframes colorUp {
+  to {
+    background: #1a8bea;
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0) rotate(0);
+  }
+  90% {
+    transform: scale(1.2) rotate(720deg);
+  }
+  100% {
+    transform: scale(1) rotate(720deg);
+  }
+}
+
+@keyframes patricSlidingIn {
+  20% {
+    right: 2rem;
+  }
+  90% {
+    right: 2rem;
+  }
+  100% {
+    right: -468px;
+  }
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes comingIn {
+  90% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes wavering {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 16px;
+  }
+}
