@@ -19,6 +19,5 @@ module.exports = withPlugins([
   {
     basePath: '/do-you-need-a-patric',
     assetPrefix: '/do-you-need-a-patric/',
-    env,
   },
 ]);
