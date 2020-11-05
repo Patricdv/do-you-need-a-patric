@@ -1,7 +1,24 @@
-// This file is not going through babel transformation.
-// So, we write it in vanilla JS
-// (But you could use ES2015 features supported by your Node.js version)
+const withPlugins = require('next-compose-plugins');
+const optimizedImages = require('next-optimized-images');
 
-module.exports = {
-  assetPrefix: '/do-you-need-a-patric/',
-};
+module.exports = withPlugins([
+  [
+    optimizedImages,
+    {
+      mozjpeg: {
+        quality: 80,
+      },
+      pngquant: {
+        speed: 3,
+        strip: true,
+        verbose: true,
+      },
+      imagesPublicPath: '/do-you-need-a-patric/_next/static/images/',
+    },
+  ],
+  {
+    basePath: '/do-you-need-a-patric',
+    assetPrefix: '/do-you-need-a-patric/',
+    env,
+  },
+]);
