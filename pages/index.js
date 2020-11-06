@@ -31,6 +31,16 @@ export default function Home() {
             <li style={{ '--i': '1s' }}>Incredible *JOKES*</li>
           </ul>
         </div>
+
+        <div className="toasty">
+          <div className="speech-bubble">TOASTY!</div>
+
+          <img
+            src={require('./images/toasty.png')}
+            className="patric-toasty"
+            alt="Me saying toasty! like in Mortal Kombat"
+          />
+        </div>
       </main>
 
       <img
