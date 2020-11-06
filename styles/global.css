@@ -64,6 +64,9 @@ main {
 }
 
 .late-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   transform: scale(0);
   font-size: 2rem;
   animation: scaleUp 1s ease forwards;
@@ -71,11 +74,59 @@ main {
   color: #fff;
 }
 
+.late-content strong {
+  font-size: 4rem;
+  text-align: center;
+  --shadow_x: 1px;
+  --shadow_y: 2px;
+  text-shadow: calc(var(--shadow_x) * -1) calc(var(--shadow_y) * 1) 0
+      hsl(259, 11%, 71%),
+    calc(var(--shadow_x) * -2) calc(var(--shadow_y) * 2) 0 hsl(259, 21%, 69%),
+    calc(var(--shadow_x) * -3) calc(var(--shadow_y) * 3) 0 hsl(259, 31%, 67%),
+    calc(var(--shadow_x) * -4) calc(var(--shadow_y) * 4) 0 hsl(259, 41%, 65%),
+    calc(var(--shadow_x) * -5) calc(var(--shadow_y) * 5) 0 hsl(259, 51%, 63%),
+    calc(var(--shadow_x) * -6) calc(var(--shadow_y) * 6) 0 hsl(259, 61%, 61%),
+    calc(var(--shadow_x) * -7) calc(var(--shadow_y) * 7) 0 hsl(259, 71%, 59%),
+    calc(var(--shadow_x) * -8) calc(var(--shadow_y) * 8) 0 hsl(259, 81%, 57%);
+}
+
 .late-content ul li {
   opacity: 0;
+  font-size: 2.5rem;
   transform: translateX(-100px);
   animation: slideIn 1s ease forwards;
   animation-delay: calc(5.2s + var(--i));
+}
+
+.scroll-more {
+  position: relative;
+}
+
+.scroll-more > div,
+.scroll-more > div:before,
+.scroll-more > div:after {
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  content: attr(title);
+  left: 0;
+  top: 0;
+}
+
+.scroll-more > div {
+  color: red;
+  text-shadow: 1px 1px 0px gray, 2px 2px 0px gray, 3px 3px 0px gray,
+    4px 4px 0px gray, 5px 5px 0px gray, 6px 6px 0px gray, 7px 7px 0px gray,
+    8px 8px 0px gray, 9px 9px 0px gray, 10px 10px 0px gray;
+}
+
+.scroll-more > div:after {
+  color: blue;
+  -webkit-mask-image: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1)
+  );
 }
 
 .patric-sliding {

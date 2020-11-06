@@ -32,14 +32,10 @@ export default function Home() {
           </ul>
         </div>
 
-        <div className="toasty">
-          <div className="speech-bubble">TOASTY!</div>
-
-          <img
-            src={require('./images/toasty.png')}
-            className="patric-toasty"
-            alt="Me saying toasty! like in Mortal Kombat"
-          />
+        <div className="scroll-more">
+          <div title="Scroll to find out more about that incredible person!">
+            Scroll to find out more about that incredible person!
+          </div>
         </div>
       </main>
 
@@ -48,6 +44,16 @@ export default function Home() {
         className="patric-sliding"
         alt="Me sliding throughout the page"
       />
+
+      <div className="toasty">
+        <div className="speech-bubble">TOASTY!</div>
+
+        <img
+          src={require('./images/toasty.png')}
+          className="patric-toasty"
+          alt="Me saying toasty! like in Mortal Kombat"
+        />
+      </div>
     </>
   );
 }

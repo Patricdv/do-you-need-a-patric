@@ -16,31 +16,34 @@
 }
 
 .speech-bubble {
-  position: relative;
   margin: 0 auto;
   width: 200px;
-  border-radius: .25em;
+  border-radius: 0.25em;
   transform: rotate(-4deg) rotateY(15deg);
   background: #629bdd;
   font: 2em/2 Century Gothic, Verdana, sans-serif;
   text-align: center;
 }
-.speech-bubble:before, .speech-bubble:after {
+.speech-bubble:before,
+.speech-bubble:after {
   position: absolute;
   z-index: -1;
   content: '';
 }
 .speech-bubble:after {
-  top: 0; right: 0; bottom: 0; left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   border-radius: inherit;
-  transform: rotate(2deg) translate(.35em, -.15em) scale(1.02);
+  transform: rotate(2deg) translate(0.35em, -0.15em) scale(1.02);
   background: #f4fbfe;
 }
 .speech-bubble:before {
   border: solid 0 transparent;
   border-right: solid 2.5em #f4fbfe;
-  border-bottom: solid .25em #629bdd;
-  bottom: .25em;
+  border-bottom: solid 0.25em #629bdd;
+  bottom: 0.25em;
   left: 1.25em;
   width: 0;
   height: 0.5em;
@@ -49,7 +52,7 @@
 
 @keyframes suddenly-appears {
   0% {
-    right: 0;
+    right: -265px;
   }
   10% {
     right: 0;
@@ -57,7 +60,6 @@
   90% {
     right: 0;
   }
-  
   100% {
     right: -265px;
   }
