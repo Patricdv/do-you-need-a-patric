@@ -143,6 +143,8 @@ main {
 @keyframes colorUp {
   to {
     background: #1a8bea;
+    background: -webkit-linear-gradient(45deg, #1a8bea 0%, #87238c 100%);
+    background: linear-gradient(45deg, #1a8bea 0%, #87238c 100%);
   }
 }
 
