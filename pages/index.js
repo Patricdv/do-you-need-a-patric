@@ -17,7 +17,11 @@ export default function Home() {
         <div className="pump-up">YES YOU DO!</div>
 
         <div className="late-content">
-          <strong>Here are some good qualities that can make your mind:</strong>
+          <strong>
+            Here are some good qualities
+            <br />
+            that can make your mind:
+          </strong>
 
           <ul>
             <li style={{ '--i': '0.2s' }}>Awesome CSS</li>
