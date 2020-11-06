@@ -36,6 +36,16 @@ export default function Home() {
           className="patric-sliding"
           alt="Me sliding throughout the page"
         />
+
+        <div className="toasty">
+          <div className="speech-bubble">TOASTY!</div>
+
+          <img
+            src={require('./images/toasty.png')}
+            className="patric-toasty"
+            alt="Me saying toasty! like in Mortal Kombat"
+          />
+        </div>
       </main>
 
       <img />
