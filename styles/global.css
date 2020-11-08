@@ -71,6 +71,7 @@ main {
   animation: scaleUp 1s ease forwards;
   animation-delay: 4.2s;
   color: #fff;
+  padding: 0 1rem;
 }
 
 .late-content strong {

@@ -60,6 +60,15 @@ export default function Home() {
           </div>
 
           <div className="depoiment-card">
+            <blockquote>
+              <p>
+                The most great and big guy I ever saw. Awesome company to
+                unravel the secrets of life, universe, and more!
+              </p>
+
+              <cite>Willis, Mauruce</cite>
+            </blockquote>
+
             <div
               className="depoiment-image"
               style={{
@@ -67,15 +76,39 @@ export default function Home() {
                   'url(' + require('./images/mauruce-willis.jpg') + ')',
               }}
             />
+          </div>
+
+          <div className="depoiment-card">
+            <div
+              className="depoiment-image"
+              style={{
+                backgroundImage:
+                  'url(' + require('./images/medieval-ram.jpg') + ')',
+              }}
+            />
 
             <blockquote>
-              <p>The most great and big guy I ever see</p>
+              <p>This guy has what is need to smash a female rat</p>
 
-              <cite>Willis, Mauruce</cite>
+              <cite>Ram, Lucas</cite>
             </blockquote>
           </div>
 
-          <div className="depoiment-card"></div>
+          <div className="depoiment-card">
+            <blockquote>
+              <p>Awesome</p>
+
+              <cite>Narudo, Reo</cite>
+            </blockquote>
+
+            <div
+              className="depoiment-image"
+              style={{
+                backgroundImage:
+                  'url(' + require('./images/reonarudo.jpg') + ')',
+              }}
+            />
+          </div>
         </section>
       </main>
 
