@@ -59,7 +59,7 @@ main {
   -webkit-text-fill-color: transparent;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffa28', endColorstr='#ec8a39', GradientType=1);
   animation: scaleUp 1s ease forwards;
-  animation-delay: 3.2s;
+  animation-delay: 3.2s!important;
 }
 
 .late-content {
@@ -69,7 +69,7 @@ main {
   transform: scale(0);
   font-size: 2rem;
   animation: scaleUp 1s ease forwards;
-  animation-delay: 4.2s;
+  animation-delay: 4.2s!important;
   color: #fff;
   padding: 0 1rem;
 }
