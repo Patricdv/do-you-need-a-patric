@@ -11,7 +11,6 @@ export default function Home() {
     <>
       <Head>
         <title>Do you need a Patric?</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
