@@ -25,7 +25,7 @@ main {
   transform: scale(1, 1.5) translateX(100vw);
   font-weight: bold;
   z-index: 1;
-  width: 100%;
+  width: 370px;
   display: inline-block;
   animation: comingIn 3s linear forwards;
   font-family: Impact, sans-serif;
@@ -200,5 +200,9 @@ main {
 @media (min-width: 1200px) {
   body {
     font-size: 16px;
+  }
+
+  .wavy {  
+    width: 100%;
   }
 }

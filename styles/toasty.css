@@ -1,23 +1,24 @@
 .toasty {
   position: fixed;
-  right: -265px;
+  right: -225px;
   bottom: 0;
   display: flex;
   flex-direction: column;
-  width: 265px;
+  width: 225px;
   animation: suddenly-appears 1s ease forwards;
   animation-delay: 30s;
+  z-index: 9999;
 }
 
 .toasty img {
-  width: 150px;
+  width: 130px;
   margin-top: 2em;
   margin-left: auto;
 }
 
 .speech-bubble {
   margin: 0 auto;
-  width: 200px;
+  width: 170px;
   border-radius: 0.25em;
   transform: rotate(-4deg) rotateY(15deg);
   background: #629bdd;
@@ -62,5 +63,15 @@
   }
   100% {
     right: -265px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .toasty img {
+    width: 150px;
+  }
+
+  .speech-bubble {
+    width: 200px;
   }
 }
