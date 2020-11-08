@@ -1,5 +1,7 @@
 body {
   font-size: 12px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 main {
@@ -7,9 +9,9 @@ main {
   flex-direction: column;
   align-items: center;
   position: relative;
-  padding: 3em 0;
+  padding: 3em 0 0;
   overflow: hidden;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   max-width: 100%;
   background-color: var(--dark);
@@ -25,13 +27,10 @@ main {
   z-index: 1;
   width: 100%;
   display: inline-block;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   animation: comingIn 3s linear forwards;
   font-family: Impact, sans-serif;
   color: #24c0fd;
   -webkit-text-stroke: 0.01em #0000aa;
-  filter: progid:DXImageTransform.Microsoft.Glow(Color=#0000aa,Strength=1);
   text-shadow: 0.13em -0.13em 0px #0000aa;
   letter-spacing: -0.05em;
 }
@@ -46,7 +45,7 @@ main {
 .pump-up {
   transform: scale(0);
   font-family: Impact, sans-serif;
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: bold;
   text-align: center;
   margin: 1rem 0;
@@ -76,9 +75,44 @@ main {
 
 .late-content strong {
   font-size: 4rem;
+  line-height: 1.2;
   text-align: center;
   --shadow_x: 1px;
   --shadow_y: 2px;
+}
+
+.late-content ul {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.late-content ul li {
+  opacity: 0;
+  font-size: 2.5rem;
+  transform: translateX(-100px);
+  animation: slideIn 1s ease forwards;
+  animation-delay: calc(5.2s + var(--i));
+  list-style-type: '👉';
+}
+
+.find-out-more {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  opacity: 0;
+  width: 100%;
+  margin-top: 1em;
+  transform: translateX(-100px);
+  animation: slideIn 1s ease forwards;
+  animation-delay: 6.4s;
+  font-size: 30px;
+  font-weight: bold;
+  color: blue;
+  --shadow_x: 0.5px;
+  --shadow_y: 0.5px;
+}
+
+.gradient-text-shadow {
   text-shadow: calc(var(--shadow_x) * -1) calc(var(--shadow_y) * 1) 0
       hsl(259, 11%, 71%),
     calc(var(--shadow_x) * -2) calc(var(--shadow_y) * 2) 0 hsl(259, 21%, 69%),
@@ -88,46 +122,6 @@ main {
     calc(var(--shadow_x) * -6) calc(var(--shadow_y) * 6) 0 hsl(259, 61%, 61%),
     calc(var(--shadow_x) * -7) calc(var(--shadow_y) * 7) 0 hsl(259, 71%, 59%),
     calc(var(--shadow_x) * -8) calc(var(--shadow_y) * 8) 0 hsl(259, 81%, 57%);
-}
-
-.late-content ul li {
-  opacity: 0;
-  font-size: 2.5rem;
-  transform: translateX(-100px);
-  animation: slideIn 1s ease forwards;
-  animation-delay: calc(5.2s + var(--i));
-}
-
-.scroll-more {
-  position: relative;
-}
-
-.scroll-more > div,
-.scroll-more > div:before,
-.scroll-more > div:after {
-  font-size: 30px;
-  font-weight: bold;
-  position: absolute;
-  content: attr(title);
-  left: 0;
-  top: 0;
-}
-
-.scroll-more > div {
-  color: red;
-  text-shadow: 1px 1px 0px gray, 2px 2px 0px gray, 3px 3px 0px gray,
-    4px 4px 0px gray, 5px 5px 0px gray, 6px 6px 0px gray, 7px 7px 0px gray,
-    8px 8px 0px gray, 9px 9px 0px gray, 10px 10px 0px gray;
-}
-
-.scroll-more > div:after {
-  color: blue;
-  -webkit-mask-image: -webkit-linear-gradient(
-    top,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 1)
-  );
-  mask-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 }
 
 .patric-sliding {
@@ -144,9 +138,10 @@ main {
 @keyframes colorUp {
   to {
     background: #1a8bea;
-    background: -webkit-linear-gradient(45deg, #1a8bea 0%, #87238c 100%);
-    background: linear-gradient(45deg, #1a8bea 0%, #87238c 100%);
   }
+  /* 100% {
+    background: linear-gradient(to right top, #1a8bea, #87238c);
+  } */
 }
 
 @keyframes scaleUp {

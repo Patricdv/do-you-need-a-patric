@@ -1,0 +1,131 @@
+.depoiments {
+  position: relative;
+  width: 100%;
+  background: #3e3e3e;
+  margin-top: 6rem;
+  padding: 2rem 10%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.depoiments::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  transform: skew(2deg, 2deg);
+  left: -2px;
+  right: -2px;
+  height: 44px;
+  background: #3e3e3e;
+}
+
+.depoiment-card {
+  position: relative;
+  display: inline-block;
+  background: #3e3e3e;
+  width: 90%;
+  max-width: 500px;
+  padding: 1em;
+  margin-bottom: 4em;
+  min-height: 100px;
+}
+
+.depoiment-card blockquote {
+  color: #ffffff;
+  font-size: 1.2em;
+  margin: 0;
+  quotes: "\201C""\201D";
+}
+
+.depoiment-card blockquote:before {
+  color: #ccc;
+  font-family: Sentinel SSm A;
+  content: open-quote;
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.3em;
+}
+
+.depoiment-card blockquote p {
+  display: inline;
+  font-size: 1.1rem;
+}
+
+.depoiment-card blockquote cite {
+  display: block;
+  font-size: 0.9rem;
+}
+
+.depoiment-card .depoiment-image {
+  background-size: cover;
+  background-position: center;
+  height: 80px;
+  width: 80px;
+  border: solid 2px;
+  border-radius: 50%;
+}
+
+
+.depoiment-card:nth-child(odd) {
+  margin-right: auto;
+}
+
+.depoiment-card:nth-child(odd):before {
+  background: #C9FFBF;
+  background: linear-gradient(to right, #FFAFBD, #C9FFBF);
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  transform: skew(2deg, 2deg);
+}
+
+.depoiment-card:nth-child(odd) .depoiment-image {
+  float: right;
+  margin-left: 1em;
+  border-top-color: #FFAFBD;
+  border-left-color: #FFAFBD;
+  border-right-color: #C9FFBF;
+  border-bottom-color: #C9FFBF;
+}
+
+.depoiment-card:nth-child(odd) blockquote cite {
+  text-align: right;
+}
+
+
+.depoiment-card:nth-child(even) {
+  margin-left: auto;
+}
+
+.depoiment-card:nth-child(even):before {
+  background: #C9FFBF;
+  background: linear-gradient(to right, #C9FFBF, #FFAFBD);
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  transform: skew(-2deg, -2deg);
+}
+
+.depoiment-card:nth-child(even) .depoiment-image {
+  float: left;
+  margin-right: 1em;
+  border-top-color: #FFAFBD;
+  border-right-color: #FFAFBD;
+  border-left-color: #C9FFBF;
+  border-bottom-color: #C9FFBF;
+}
+
+.depoiment-card:nth-child(even) blockquote cite {
+  text-align: left;
+}

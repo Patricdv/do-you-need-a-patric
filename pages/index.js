@@ -1,9 +1,12 @@
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
+import { useEffect } from 'react';
 
 const WavyRainbow = dynamic(() => import('../components/WavyRainbow'));
 
 export default function Home() {
+  useEffect(() => {}, []);
+
   return (
     <>
       <Head>
@@ -17,7 +20,7 @@ export default function Home() {
         <div className="pump-up">YES YOU DO!</div>
 
         <div className="late-content">
-          <strong>
+          <strong className="gradient-text-shadow">
             Here are some good qualities
             <br />
             that can make your mind:
@@ -30,13 +33,50 @@ export default function Home() {
             <li style={{ '--i': '0.8s' }}>Pro javascript with ES6+</li>
             <li style={{ '--i': '1s' }}>Incredible *JOKES*</li>
           </ul>
-        </div>
 
-        <div className="scroll-more">
-          <div title="Scroll to find out more about that incredible person!">
-            Scroll to find out more about that incredible person!
+          <div className="find-out-more gradient-text-shadow">
+            Find out more about this incredible person
+            <br />
+            through those beatiful depoiments!
           </div>
         </div>
+
+        <section className="depoiments">
+          <div className="depoiment-card">
+            <div
+              className="depoiment-image"
+              style={{
+                backgroundImage: 'url(' + require('./images/carol.jpg') + ')',
+              }}
+            />
+
+            <blockquote>
+              <p>
+                What to say about this guy I barely know but consider a lot?
+              </p>
+
+              <cite>Jardins, Carol</cite>
+            </blockquote>
+          </div>
+
+          <div className="depoiment-card">
+            <div
+              className="depoiment-image"
+              style={{
+                backgroundImage:
+                  'url(' + require('./images/mauruce-willis.jpg') + ')',
+              }}
+            />
+
+            <blockquote>
+              <p>The most great and big guy I ever see</p>
+
+              <cite>Willis, Mauruce</cite>
+            </blockquote>
+          </div>
+
+          <div className="depoiment-card"></div>
+        </section>
       </main>
 
       <img
