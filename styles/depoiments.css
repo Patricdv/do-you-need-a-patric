@@ -13,11 +13,11 @@
 .depoiments::before {
   content: "";
   position: absolute;
-  top: -20px;
+  top: -23px;
   transform: skew(2deg, 2deg);
   left: -2px;
   right: -2px;
-  height: 44px;
+  height: 60px;
   background: #3e3e3e;
 }
 

@@ -87,7 +87,7 @@ export default function Home() {
             />
 
             <blockquote>
-              <p>This guy has what is need to smash a female rat</p>
+              <p>This guy has what is need to smash a female rat.</p>
 
               <cite>Ram, Lucas</cite>
             </blockquote>
@@ -95,7 +95,7 @@ export default function Home() {
 
           <div className="depoiment-card">
             <blockquote>
-              <p>Awesome</p>
+              <p>Awesome.</p>
 
               <cite>Narudo, Reo</cite>
             </blockquote>
