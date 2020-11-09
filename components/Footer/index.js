@@ -43,6 +43,7 @@ export default function Footer() {
     }
 
     key = 0;
+    setKeyProgress(0);
   };
 
   return (
