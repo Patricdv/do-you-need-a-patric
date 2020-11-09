@@ -75,7 +75,7 @@ main {
 }
 
 .late-content strong {
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 1.2;
   text-align: center;
   --shadow_x: 1px;
@@ -89,7 +89,7 @@ main {
 
 .late-content ul li {
   opacity: 0;
-  font-size: 2.5rem;
+  font-size: 2rem;
   transform: translateX(-100px);
   animation: slideIn 1s ease forwards;
   animation-delay: calc(5.2s + var(--i));
@@ -131,9 +131,26 @@ main {
   bottom: 0;
   width: 468px;
   height: 320px;
-  z-index: 1;
+  z-index: 999;
   animation: patricSlidingIn 2s ease-out forwards;
   animation-delay: 3.2s;
+}
+
+footer {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+footer .code-progress {
+  padding-left: 8px;
+}
+
+footer .code-progress span {
+  padding: 0 4px;
+}
+
+footer .code-progress span.blue {
+  color: rgb(51, 130, 233)
 }
 
 @keyframes colorUp {
@@ -204,5 +221,13 @@ main {
 
   .wavy {  
     width: 100%;
+  }
+
+  .late-content strong {
+    font-size: 4rem;
+  }
+
+  .late-content ul li {
+    font-size: 2.5rem;
   }
 }

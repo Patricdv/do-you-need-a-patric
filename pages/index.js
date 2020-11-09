@@ -1,12 +1,11 @@
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
-import { useEffect } from 'react';
+// import Footer from '../components/Footer';
 
 const WavyRainbow = dynamic(() => import('../components/WavyRainbow'));
+const Footer = dynamic(() => import('../components/Footer'));
 
 export default function Home() {
-  useEffect(() => {}, []);
-
   return (
     <>
       <Head>
@@ -61,7 +60,7 @@ export default function Home() {
           <div className="depoiment-card">
             <blockquote>
               <p>
-                The most great and big guy I ever saw. Awesome company to
+                The most great and big guy I've ever seen. Awesome company to
                 unravel the secrets of life, universe, and more!
               </p>
 
@@ -109,23 +108,15 @@ export default function Home() {
             />
           </div>
         </section>
-      </main>
-
-      <img
-        src={require('./images/patric-sliding.png')}
-        className="patric-sliding"
-        alt="Me sliding throughout the page"
-      />
-
-      <div className="toasty">
-        <div className="speech-bubble">TOASTY!</div>
 
         <img
-          src={require('./images/toasty.png')}
-          className="patric-toasty"
-          alt="Me saying toasty! like in Mortal Kombat"
+          src={require('./images/patric-sliding.png')}
+          className="patric-sliding"
+          alt="Me sliding throughout the page"
         />
-      </div>
+      </main>
+
+      <Footer />
     </>
   );
 }
