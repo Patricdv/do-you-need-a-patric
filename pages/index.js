@@ -130,7 +130,7 @@ export default function Home() {
             <blockquote>
               <p>The best jokes, codes and paçoquinhas in the country.</p>
 
-              <cite>Colusso, Ronai</cite>
+              <cite>Blue Thunder, Ronai</cite>
             </blockquote>
 
             <div
@@ -140,6 +140,18 @@ export default function Home() {
               }}
             />
           </div>
+
+          <div className="not-convinced-yet">
+            <h1>Not convinced yet?</h1>
+            <p>&bull;</p>
+            <p>&bull;</p>
+            <p>&bull;</p>
+            <p>&bull;</p>
+            <p>&bull;</p>
+            <p>&bull;</p>
+            <p>&bull;</p>
+            <h3>All right! It's time for my final argument</h3>
+          </div>
         </section>
 
         <img
@@ -148,6 +160,19 @@ export default function Home() {
           alt="Me sliding throughout the page"
         />
       </main>
+
+      <div className="gif-portrait">
+        <h3 className="rainbow-text">Breathtaking Good Morning Gifs!</h3>
+
+        <div
+          className="my-portrait"
+          style={{
+            backgroundImage: `url(${require('./images/patric-portrait.png')})`,
+          }}
+        >
+          <img src={require('./images/good-morning.gif')} />
+        </div>
+      </div>
 
       <Footer />
     </>

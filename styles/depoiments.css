@@ -3,10 +3,7 @@
   width: 100%;
   background: #3e3e3e;
   margin-top: 6rem;
-  padding: 3rem 10%; 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 3rem 10% 0;
   z-index: 2;
 }
 
@@ -129,4 +126,18 @@
 
 .depoiment-card:nth-child(even) blockquote cite {
   text-align: left;
+}
+
+.not-convinced-yet {
+  color: #ffffff;
+  text-align: center;
+}
+
+.not-convinced-yet h1 {
+  font-size: 3rem;
+}
+
+.not-convinced-yet p {
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }

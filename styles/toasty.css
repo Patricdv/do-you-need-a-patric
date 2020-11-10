@@ -1,6 +1,7 @@
 .toasty {
   position: fixed;
   right: -225px;
+  right: 0;
   bottom: 0;
   display: flex;
   flex-direction: column;
@@ -14,7 +15,7 @@
 
 .toasty img {
   width: 130px;
-  margin-top: 2em;
+  margin-top: 1em;
   margin-left: auto;
 }
 
@@ -24,7 +25,7 @@
   border-radius: 0.25em;
   transform: rotate(-4deg) rotateY(15deg);
   background: #629bdd;
-  font: 2em/2 Century Gothic, Verdana, sans-serif;
+  font: 1em/2 Century Gothic, Verdana, sans-serif;
   text-align: center;
 }
 .speech-bubble:before,
@@ -69,11 +70,17 @@
 }
 
 @media (min-width: 1200px) {
+  .toasty {
+    width: 350px;
+  }
+
   .toasty img {
     width: 150px;
+    margin-top: 2em;
   }
 
   .speech-bubble {
-    width: 200px;
+    width: 235px;
+    font: 2em/2 Century Gothic, Verdana, sans-serif;
   }
 }

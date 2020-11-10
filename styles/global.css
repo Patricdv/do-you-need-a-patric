@@ -136,10 +136,51 @@ main {
   animation-delay: 3.2s;
 }
 
+.rainbow-text {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  padding: 3rem 0 1rem;
+  font-size: 3rem;
+  line-height: 1.4;
+}
+
+.gif-portrait {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  background: #3e3e3e;
+  padding: 3rem 10% 0;
+}
+
+.gif-portrait .my-portrait {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  height: 293px;
+  /* background-size: 421px 587px; */
+  background-size: 210px 293px;
+  background-position: top left;
+  background-repeat: no-repeat;
+  overflow: visible;
+}
+
+.gif-portrait .my-portrait img {
+  position: absolute;
+  left: 10%;
+  top: 116px;
+  width: 80%;
+  z-index: 9;
+}
+
 footer {
   text-align: center;
   font-size: 1.5rem;
-  padding: 1rem;
+  background-color: #ffc107;
+  padding: 10rem 0 2rem;
 }
 footer .code-progress {
   padding-left: 8px;
@@ -214,6 +255,13 @@ footer .code-progress span.blue {
   }
 }
 
+
+@media (min-width: 700px) {
+  footer {
+    padding: 20rem 0 2rem;
+  }
+}
+
 @media (min-width: 1200px) {
   body {
     font-size: 16px;
@@ -229,5 +277,15 @@ footer .code-progress span.blue {
 
   .late-content ul li {
     font-size: 2.5rem;
+  }
+
+  .rainbow-text {
+    font-size: 4rem;    
+  }
+
+  .gif-portrait .my-portrait img {
+    left: 120px;
+    top: 116px;
+    width: calc(100% - 240px);
   }
 }
