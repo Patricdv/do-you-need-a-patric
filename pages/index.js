@@ -107,6 +107,39 @@ export default function Home() {
               }}
             />
           </div>
+
+          <div className="depoiment-card">
+            <blockquote>
+              <p>
+                Extremely competent professional. I never saw someone similar on
+                the market.
+              </p>
+
+              <cite>Colusso, Genaro</cite>
+            </blockquote>
+
+            <div
+              className="depoiment-image"
+              style={{
+                backgroundImage: 'url(' + require('./images/genaro.jpg') + ')',
+              }}
+            />
+          </div>
+
+          <div className="depoiment-card">
+            <blockquote>
+              <p>The best jokes, codes and paçoquinhas in the country.</p>
+
+              <cite>Colusso, Ronai</cite>
+            </blockquote>
+
+            <div
+              className="depoiment-image"
+              style={{
+                backgroundImage: 'url(' + require('./images/ronai.jpg') + ')',
+              }}
+            />
+          </div>
         </section>
 
         <img
