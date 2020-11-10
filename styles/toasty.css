@@ -1,7 +1,6 @@
 .toasty {
   position: fixed;
   right: -225px;
-  right: 0;
   bottom: 0;
   display: flex;
   flex-direction: column;
