@@ -109,6 +109,13 @@ export default function Home() {
           </div>
 
           <div className="depoiment-card">
+            <div
+              className="depoiment-image"
+              style={{
+                backgroundImage: 'url(' + require('./images/genaro.jpg') + ')',
+              }}
+            />
+
             <blockquote>
               <p>
                 Extremely competent professional. I never saw someone similar on
@@ -117,13 +124,6 @@ export default function Home() {
 
               <cite>Colusso, Genaro</cite>
             </blockquote>
-
-            <div
-              className="depoiment-image"
-              style={{
-                backgroundImage: 'url(' + require('./images/genaro.jpg') + ')',
-              }}
-            />
           </div>
 
           <div className="depoiment-card">
@@ -142,12 +142,6 @@ export default function Home() {
           </div>
 
           <div className="depoiment-card">
-            <blockquote>
-              <p>Probably better than Half Life 3.</p>
-
-              <cite>Bollis, Luiz</cite>
-            </blockquote>
-
             <div
               className="depoiment-image"
               style={{
@@ -155,6 +149,12 @@ export default function Home() {
                   'url(' + require('./images/luiz-bollis.jpg') + ')',
               }}
             />
+
+            <blockquote>
+              <p>Probably better than Half Life 3.</p>
+
+              <cite>Bollis, Luiz</cite>
+            </blockquote>
           </div>
 
           <div className="depoiment-card">
