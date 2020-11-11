@@ -180,7 +180,7 @@ footer {
   text-align: center;
   font-size: 1.5rem;
   background-color: #ffc107;
-  padding: 10rem 0 2rem;
+  padding: 2rem 0;
 }
 footer .code-progress {
   padding-left: 8px;
@@ -252,13 +252,6 @@ footer .code-progress span.blue {
   }
   100% {
     transform: translateY(0);
-  }
-}
-
-
-@media (min-width: 700px) {
-  footer {
-    padding: 20rem 0 2rem;
   }
 }
 

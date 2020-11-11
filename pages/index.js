@@ -141,6 +141,38 @@ export default function Home() {
             />
           </div>
 
+          <div className="depoiment-card">
+            <blockquote>
+              <p>Probably better than Half Life 3.</p>
+
+              <cite>Bollis, Luiz</cite>
+            </blockquote>
+
+            <div
+              className="depoiment-image"
+              style={{
+                backgroundImage:
+                  'url(' + require('./images/luiz-bollis.jpg') + ')',
+              }}
+            />
+          </div>
+
+          <div className="depoiment-card">
+            <blockquote>
+              <p>Better than Half Life 3.</p>
+
+              <cite>Bollis, Future</cite>
+            </blockquote>
+
+            <div
+              className="depoiment-image"
+              style={{
+                backgroundImage:
+                  'url(' + require('./images/future-bollis.jpg') + ')',
+              }}
+            />
+          </div>
+
           <div className="not-convinced-yet">
             <h1>Not convinced yet?</h1>
             <p>&bull;</p>
@@ -150,29 +182,95 @@ export default function Home() {
             <p>&bull;</p>
             <p>&bull;</p>
             <p>&bull;</p>
-            <h3>All right! It's time for my final argument</h3>
+            <h3>All right! It's time for my final arguments</h3>
           </div>
         </section>
 
+        <section className="gif-portrait">
+          <h3 className="rainbow-text">Breathtaking Good Morning Gifs!</h3>
+
+          <div
+            className="my-portrait"
+            style={{
+              backgroundImage: `url(${require('./images/patric-portrait.png')})`,
+            }}
+          >
+            <img src={require('./images/good-morning.gif')} />
+          </div>
+        </section>
+
+        <section className="rumours">
+          <h3 className="rainbow-text">There's no bad rumours about me!</h3>
+
+          <div className="my-rumours">
+            <div className="my-rumours-card">
+              <div
+                className="card-image"
+                style={{
+                  backgroundImage: `url(${require('./images/patric-austin.jpg')})`,
+                }}
+              />
+
+              <p>I was never casted to be Austin Powers!</p>
+            </div>
+
+            <div className="my-rumours-card">
+              <div
+                className="card-image"
+                style={{
+                  backgroundImage: `url(${require('./images/patric-spongebob.jpg')})`,
+                }}
+              />
+
+              <p>Spongebob is not my friend (but surely could be).</p>
+            </div>
+
+            <div className="my-rumours-card">
+              <div
+                className="card-image"
+                style={{
+                  backgroundImage: `url(${require('./images/patric-wizard.jpg')})`,
+                }}
+              />
+
+              <p>I never used my great magic powers to the evil.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="follow-me">
+          <h3 className="rainbow-text">Unbelievable Social Media!</h3>
+
+          <a
+            href="https://twitter.com/PatricVenturini"
+            rel="noreferrer noopener"
+            target="_blank"
+            className="twitter"
+          >
+            <img
+              src={require('./images/patric-twitter.png')}
+              alt="Patric's Twitter"
+            />
+          </a>
+
+          <a
+            href="https://www.instagram.com/patricdv/"
+            rel="noreferrer noopener"
+            target="_blank"
+            className="instagram"
+          >
+            <img
+              src={require('./images/patric-instagram.png')}
+              alt="Patric's Instagram"
+            />
+          </a>
+        </section>
         <img
           src={require('./images/patric-sliding.png')}
           className="patric-sliding"
           alt="Me sliding throughout the page"
         />
       </main>
-
-      <div className="gif-portrait">
-        <h3 className="rainbow-text">Breathtaking Good Morning Gifs!</h3>
-
-        <div
-          className="my-portrait"
-          style={{
-            backgroundImage: `url(${require('./images/patric-portrait.png')})`,
-          }}
-        >
-          <img src={require('./images/good-morning.gif')} />
-        </div>
-      </div>
 
       <Footer />
     </>

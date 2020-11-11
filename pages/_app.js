@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/global.css';
 import '../styles/toasty.css';
 import '../styles/depoiments.css';
+import '../styles/rumours.css';
+import '../styles/follow-me.css';
 
 export default function App({ Component, pageProps }) {
   return (

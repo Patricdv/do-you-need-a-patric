@@ -1,0 +1,75 @@
+.follow-me {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.follow-me h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 1rem;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.follow-me img {
+  display: inline-block;
+  width: auto;
+  margin: 0 auto;
+  filter: grayscale(100%);
+}
+
+.follow-me .twitter,
+.follow-me .instagram {
+  background: #dfdfdf;
+  transition: background 0.3s;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.follow-me .twitter {
+  height: 500px;
+}
+
+.follow-me .twitter img {
+  height: 400px;
+}
+
+.follow-me .twitter:hover {
+  background:#66b7e9;
+}
+
+.follow-me .instagram {
+  height: 400px;
+}
+
+.follow-me .instagram img {
+  height: 300px;
+}
+
+.follow-me .instagram:hover {
+  background:#cf225a;
+}
+
+.follow-me .twitter:hover img, .follow-me .instagram:hover img {
+  filter: none;
+}
+
+@media (min-width: 700px) {
+  .follow-me {
+    flex-direction: row;
+  } 
+  
+  .follow-me .twitter,
+  .follow-me .instagram {
+    width: 50%;
+  }
+
+  .follow-me .instagram {
+    height: 500px;
+  }
+}
