@@ -146,6 +146,40 @@ export default function Home() {
               className="depoiment-image"
               style={{
                 backgroundImage:
+                  'url(' + require('./images/rapha-sun.jpg') + ')',
+              }}
+            />
+
+            <blockquote>
+              <p>
+                Literally a guy who knows how bring awesome experiences to
+                humanity!
+              </p>
+
+              <cite>Borges, Rapha</cite>
+            </blockquote>
+          </div>
+
+          <div className="depoiment-card">
+            <blockquote>
+              <p>The best wizard I've ever met!</p>
+
+              <cite>Lugas, The</cite>
+            </blockquote>
+
+            <div
+              className="depoiment-image"
+              style={{
+                backgroundImage: 'url(' + require('./images/lugas.jpg') + ')',
+              }}
+            />
+          </div>
+
+          <div className="depoiment-card">
+            <div
+              className="depoiment-image"
+              style={{
+                backgroundImage:
                   'url(' + require('./images/luiz-bollis.jpg') + ')',
               }}
             />
@@ -171,25 +205,6 @@ export default function Home() {
                   'url(' + require('./images/future-bollis.jpg') + ')',
               }}
             />
-          </div>
-
-          <div className="depoiment-card">
-            <div
-              className="depoiment-image"
-              style={{
-                backgroundImage:
-                  'url(' + require('./images/rapha-sun.jpg') + ')',
-              }}
-            />
-
-            <blockquote>
-              <p>
-                Literally a guy who knows how bring awesome experiences to
-                humanity!
-              </p>
-
-              <cite>Borges, Rapha</cite>
-            </blockquote>
           </div>
 
           <div className="not-convinced-yet">
