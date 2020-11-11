@@ -173,6 +173,25 @@ export default function Home() {
             />
           </div>
 
+          <div className="depoiment-card">
+            <div
+              className="depoiment-image"
+              style={{
+                backgroundImage:
+                  'url(' + require('./images/rapha-sun.jpg') + ')',
+              }}
+            />
+
+            <blockquote>
+              <p>
+                Literally a guy who knows how bring awesome experiences to
+                humanity!
+              </p>
+
+              <cite>Borges, Rapha</cite>
+            </blockquote>
+          </div>
+
           <div className="not-convinced-yet">
             <h1>Not convinced yet?</h1>
             <p>&bull;</p>
