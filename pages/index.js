@@ -60,7 +60,7 @@ export default function Home() {
           <div className="depoiment-card">
             <blockquote>
               <p>
-                The most great and big guy I've ever seen. Awesome company to
+                The greatest and biggest guy I've ever seen. Awesome company to
                 unravel the secrets of life, universe, and more!
               </p>
 
@@ -86,7 +86,7 @@ export default function Home() {
             />
 
             <blockquote>
-              <p>This guy has what is need to smash a female rat.</p>
+              <p>This guy has what is needed to smash a female rat.</p>
 
               <cite>Ram, Lucas</cite>
             </blockquote>
