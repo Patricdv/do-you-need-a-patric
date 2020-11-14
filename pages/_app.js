@@ -6,6 +6,7 @@ import '../styles/toasty.css';
 import '../styles/depoiments.css';
 import '../styles/rumours.css';
 import '../styles/follow-me.css';
+import '../styles/dark-side.css';
 
 export default function App({ Component, pageProps }) {
   return (
