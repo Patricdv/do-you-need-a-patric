@@ -14,31 +14,33 @@ export default function Home() {
       </Head>
 
       <main>
-        <WavyRainbow />
+        <section>
+          <WavyRainbow />
 
-        <div className="pump-up">YES YOU DO!</div>
+          <div className="pump-up">YES YOU DO!</div>
 
-        <div className="late-content">
-          <strong className="gradient-text-shadow">
-            Here are some good qualities
-            <br />
-            that can make your mind:
-          </strong>
+          <div className="late-content">
+            <strong className="gradient-text-shadow">
+              Here are some good qualities
+              <br />
+              that can make your mind:
+            </strong>
 
-          <ul>
-            <li style={{ '--i': '0.2s' }}>Awesome CSS</li>
-            <li style={{ '--i': '0.4s' }}>High quality HTML </li>
-            <li style={{ '--i': '0.6s' }}>Some crazy React & Next.js</li>
-            <li style={{ '--i': '0.8s' }}>Pro javascript with ES6+</li>
-            <li style={{ '--i': '1s' }}>Incredible *JOKES*</li>
-          </ul>
+            <ul>
+              <li style={{ '--i': '0.2s' }}>Awesome CSS</li>
+              <li style={{ '--i': '0.4s' }}>High quality HTML </li>
+              <li style={{ '--i': '0.6s' }}>Some crazy React & Next.js</li>
+              <li style={{ '--i': '0.8s' }}>Pro javascript with ES6+</li>
+              <li style={{ '--i': '1s' }}>Incredible *JOKES*</li>
+            </ul>
 
-          <div className="find-out-more gradient-text-shadow">
-            Find out more about this incredible person
-            <br />
-            through those beatiful depoiments!
+            <div className="find-out-more gradient-text-shadow">
+              Find out more about this incredible person
+              <br />
+              through those beatiful depoiments!
+            </div>
           </div>
-        </div>
+        </section>
 
         <section className="depoiments">
           <DepoimentCard
@@ -196,6 +198,7 @@ export default function Home() {
             />
           </a>
         </section>
+
         <img
           src={require('./images/patric-sliding.png')}
           className="patric-sliding"
