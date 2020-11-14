@@ -21,14 +21,24 @@
 .depoiment-card {
   position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   background: #3e3e3e;
   width: 90%;
   max-width: 500px;
   padding: 1em;
   margin-bottom: 4em;
   min-height: 100px;
+}
+
+
+.depoiment-card:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+
+.depoiment-card:nth-child(even) {
+  flex-direction: row;
 }
 
 .depoiment-card blockquote {
@@ -87,7 +97,6 @@
 }
 
 .depoiment-card:nth-child(odd) .depoiment-image {
-  float: right;
   border-top-color: #FFAFBD;
   border-left-color: #FFAFBD;
   border-right-color: #C9FFBF;
@@ -117,7 +126,6 @@
 }
 
 .depoiment-card:nth-child(even) .depoiment-image {
-  float: left;
   border-top-color: #FFAFBD;
   border-right-color: #FFAFBD;
   border-left-color: #C9FFBF;

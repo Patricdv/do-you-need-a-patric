@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic';
 // import Footer from '../components/Footer';
 
 const WavyRainbow = dynamic(() => import('../components/WavyRainbow'));
+const DepoimentCard = dynamic(() => import('../components/DepoimentCard'));
 const Footer = dynamic(() => import('../components/Footer'));
 
 export default function Home() {
@@ -40,172 +41,68 @@ export default function Home() {
         </div>
 
         <section className="depoiments">
-          <div className="depoiment-card">
-            <div
-              className="depoiment-image"
-              style={{
-                backgroundImage: 'url(' + require('./images/carol.jpg') + ')',
-              }}
-            />
+          <DepoimentCard
+            quote="What to say about this guy I barely know but consider a lot?"
+            author="Gardens, Carol"
+            image={require('./images/carol.jpg')}
+          />
 
-            <blockquote>
-              <p>
-                What to say about this guy I barely know but consider a lot?
-              </p>
+          <DepoimentCard
+            quote="The greatest and biggest guy I've ever seen. Awesome company to
+            unravel the secrets of life, universe, and more!"
+            author="Willis, Mauruce"
+            image={require('./images/mauruce-willis.jpg')}
+          />
 
-              <cite>Jardins, Carol</cite>
-            </blockquote>
-          </div>
+          <DepoimentCard
+            quote="This guy has what is needed to smash a female rat."
+            author="Ram, Lucas"
+            image={require('./images/medieval-ram.jpg')}
+          />
 
-          <div className="depoiment-card">
-            <blockquote>
-              <p>
-                The greatest and biggest guy I've ever seen. Awesome company to
-                unravel the secrets of life, universe, and more!
-              </p>
+          <DepoimentCard
+            quote="Awesome."
+            author="Narudo, Reo"
+            image={require('./images/reonarudo.jpg')}
+          />
 
-              <cite>Willis, Mauruce</cite>
-            </blockquote>
+          <DepoimentCard
+            quote="Extremely competent professional. I never saw someone similar on
+            the market."
+            author="Colusso, Genaro"
+            image={require('./images/genaro.jpg')}
+          />
 
-            <div
-              className="depoiment-image"
-              style={{
-                backgroundImage:
-                  'url(' + require('./images/mauruce-willis.jpg') + ')',
-              }}
-            />
-          </div>
+          <DepoimentCard
+            quote="The best jokes, codes and paçoquinhas in the country."
+            author="Blue Thunder, Ronai"
+            image={require('./images/ronai.jpg')}
+          />
 
-          <div className="depoiment-card">
-            <div
-              className="depoiment-image"
-              style={{
-                backgroundImage:
-                  'url(' + require('./images/medieval-ram.jpg') + ')',
-              }}
-            />
+          <DepoimentCard
+            quote="Literally a guy who knows how bring awesome experiences to
+            humanity!"
+            author="Borges, Rapha"
+            image={require('./images/rapha-sun.jpg')}
+          />
 
-            <blockquote>
-              <p>This guy has what is needed to smash a female rat.</p>
+          <DepoimentCard
+            quote="The best wizard I've ever met!"
+            author="Lugas, The"
+            image={require('./images/lugas.jpg')}
+          />
 
-              <cite>Ram, Lucas</cite>
-            </blockquote>
-          </div>
+          <DepoimentCard
+            quote="Probably better than Half Life 3."
+            author="Bollis, Luiz"
+            image={require('./images/luiz-bollis.jpg')}
+          />
 
-          <div className="depoiment-card">
-            <blockquote>
-              <p>Awesome.</p>
-
-              <cite>Narudo, Reo</cite>
-            </blockquote>
-
-            <div
-              className="depoiment-image"
-              style={{
-                backgroundImage:
-                  'url(' + require('./images/reonarudo.jpg') + ')',
-              }}
-            />
-          </div>
-
-          <div className="depoiment-card">
-            <div
-              className="depoiment-image"
-              style={{
-                backgroundImage: 'url(' + require('./images/genaro.jpg') + ')',
-              }}
-            />
-
-            <blockquote>
-              <p>
-                Extremely competent professional. I never saw someone similar on
-                the market.
-              </p>
-
-              <cite>Colusso, Genaro</cite>
-            </blockquote>
-          </div>
-
-          <div className="depoiment-card">
-            <blockquote>
-              <p>The best jokes, codes and paçoquinhas in the country.</p>
-
-              <cite>Blue Thunder, Ronai</cite>
-            </blockquote>
-
-            <div
-              className="depoiment-image"
-              style={{
-                backgroundImage: 'url(' + require('./images/ronai.jpg') + ')',
-              }}
-            />
-          </div>
-
-          <div className="depoiment-card">
-            <div
-              className="depoiment-image"
-              style={{
-                backgroundImage:
-                  'url(' + require('./images/rapha-sun.jpg') + ')',
-              }}
-            />
-
-            <blockquote>
-              <p>
-                Literally a guy who knows how bring awesome experiences to
-                humanity!
-              </p>
-
-              <cite>Borges, Rapha</cite>
-            </blockquote>
-          </div>
-
-          <div className="depoiment-card">
-            <blockquote>
-              <p>The best wizard I've ever met!</p>
-
-              <cite>Lugas, The</cite>
-            </blockquote>
-
-            <div
-              className="depoiment-image"
-              style={{
-                backgroundImage: 'url(' + require('./images/lugas.jpg') + ')',
-              }}
-            />
-          </div>
-
-          <div className="depoiment-card">
-            <div
-              className="depoiment-image"
-              style={{
-                backgroundImage:
-                  'url(' + require('./images/luiz-bollis.jpg') + ')',
-              }}
-            />
-
-            <blockquote>
-              <p>Probably better than Half Life 3.</p>
-
-              <cite>Bollis, Luiz</cite>
-            </blockquote>
-          </div>
-
-          <div className="depoiment-card">
-            <blockquote>
-              <p>Better than Half Life 3.</p>
-
-              <cite>Bollis, Future</cite>
-            </blockquote>
-
-            <div
-              className="depoiment-image"
-              style={{
-                backgroundImage:
-                  'url(' + require('./images/future-bollis.jpg') + ')',
-              }}
-            />
-          </div>
+          <DepoimentCard
+            quote="Better than Half Life 3."
+            author="Bollis, Future"
+            image={require('./images/future-bollis.jpg')}
+          />
 
           <div className="not-convinced-yet">
             <h1>Not convinced yet?</h1>
