@@ -46,6 +46,23 @@ main.dark-side {
   animation-delay: 3.5s;
 }
 
+.dark-side p {
+  padding: 5rem 0;
+  position: relative;
+  font-size: 2rem;
+  color: aquamarine;
+}
+
+.dark-side p img {
+  position: absolute;
+  width: 90px;
+  right: 0;
+  top: 4rem;
+  animation: helmet 2s ease-in-out forwards;
+  transform: rotateZ(0deg) translate3d(50vw, 300px, 0);
+  animation-delay: 3.5s;
+}
+
 @keyframes blueUp {
   to {
     color: #252839;
@@ -64,5 +81,13 @@ main.dark-side {
   }
   70%, 90% {  
     width: 100%;
+  }
+}
+
+@keyframes helmet {
+  0% {
+  }
+  100% {
+    transform: rotateZ(1100deg) translate3d(45px, -45px,0);
   }
 }

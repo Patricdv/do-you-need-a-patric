@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
-// import Footer from '../components/Footer';
 
 const WavyRainbow = dynamic(() => import('../components/WavyRainbow'));
 const DepoimentCard = dynamic(() => import('../components/DepoimentCard'));
@@ -13,7 +12,7 @@ export default function Home() {
         <title>Do you need a Patric?</title>
       </Head>
 
-      <main>
+      <main className="home">
         <section>
           <WavyRainbow />
 
