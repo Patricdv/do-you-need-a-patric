@@ -13,11 +13,11 @@ module.exports = withPlugins([
         strip: true,
         verbose: true,
       },
-      imagesPublicPath: '/do-you-need-a-patric/_next/static/images/',
+      // imagesPublicPath: '/do-you-need-a-patric/_next/static/images/',
     },
   ],
   {
-    basePath: '/do-you-need-a-patric',
-    assetPrefix: '/do-you-need-a-patric/',
+    // basePath: '/do-you-need-a-patric',
+    // assetPrefix: '/do-you-need-a-patric/',
   },
 ]);

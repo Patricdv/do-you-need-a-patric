@@ -41,7 +41,7 @@ main.dark-side {
   border-right: 2px solid;
   overflow: hidden;
   white-space: nowrap;
-  
+
   animation: writeInOut 12s linear infinite;
   animation-delay: 3.5s;
 }
@@ -63,6 +63,20 @@ main.dark-side {
   animation-delay: 3.5s;
 }
 
+.pattern {
+  width: 250px;
+  height: 250px;
+  border: 1px solid #000;
+
+  background-image: paint(pattern);
+  --pattern-color: #ffcc00;
+  --pattern-size: 23;
+  --pattern-spacing: 0;
+  --pattern-shadow-blur: 10;
+  --pattern-shadow-x: 10;
+  --pattern-shadow-y: 1;
+}
+
 @keyframes blueUp {
   to {
     color: #252839;
@@ -76,10 +90,13 @@ main.dark-side {
 }
 
 @keyframes writeInOut {
-  0%, 10%, 100% {
+  0%,
+  10%,
+  100% {
     width: 0%;
   }
-  70%, 90% {  
+  70%,
+  90% {
     width: 100%;
   }
 }
@@ -88,6 +105,6 @@ main.dark-side {
   0% {
   }
   100% {
-    transform: rotateZ(1100deg) translate3d(45px, -45px,0);
+    transform: rotateZ(1100deg) translate3d(45px, -45px, 0);
   }
 }

@@ -26,11 +26,13 @@ export default function Home() {
             </strong>
 
             <ul>
-              <li style={{ '--i': '0.2s' }}>Awesome CSS</li>
-              <li style={{ '--i': '0.4s' }}>High quality HTML </li>
-              <li style={{ '--i': '0.6s' }}>Some crazy React & Next.js</li>
-              <li style={{ '--i': '0.8s' }}>Pro javascript with ES6+</li>
-              <li style={{ '--i': '1s' }}>Incredible *JOKES*</li>
+              <li style={{ '--i': '0.2s' } as any}>Awesome CSS</li>
+              <li style={{ '--i': '0.4s' } as any}>High quality HTML </li>
+              <li style={{ '--i': '0.6s' } as any}>
+                Some crazy React & Next.js
+              </li>
+              <li style={{ '--i': '0.8s' } as any}>Pro javascript with ES6+</li>
+              <li style={{ '--i': '1s' } as any}>Incredible *JOKES*</li>
             </ul>
 
             <div className="find-out-more gradient-text-shadow">
