@@ -22,23 +22,23 @@ export default function Home() {
             <strong className="gradient-text-shadow">
               Here are some good qualities
               <br />
-              that can make your mind:
+              that can help you make your mind:
             </strong>
 
             <ul>
-              <li style={{ '--i': '0.2s' } as any}>Awesome CSS</li>
-              <li style={{ '--i': '0.4s' } as any}>High quality HTML </li>
+              <li style={{ '--i': '0.2s' } as any}>Awesome CSS skills</li>
+              <li style={{ '--i': '0.4s' } as any}>High quality HTML</li>
               <li style={{ '--i': '0.6s' } as any}>
-                Some crazy React & Next.js
+                Some crazy React & Next.js tricks
               </li>
               <li style={{ '--i': '0.8s' } as any}>Pro javascript with ES6+</li>
-              <li style={{ '--i': '1s' } as any}>Incredible *JOKES*</li>
+              <li style={{ '--i': '1s' } as any}>Unbelievable *JOKES*</li>
             </ul>
 
             <div className="find-out-more gradient-text-shadow">
-              Find out more about this incredible person
+              Find out more about this amazing person
               <br />
-              through those beatiful depoiments!
+              through those beatiful and totally not biased testimonials!
             </div>
           </div>
         </section>
@@ -83,7 +83,7 @@ export default function Home() {
           />
 
           <DepoimentCard
-            quote="Literally a guy who knows how bring awesome experiences to
+            quote="Literally a guy who knows how to bring awesome experiences to
             humanity!"
             author="Borges, Rapha"
             image={require('./images/rapha-sun.jpg')}
@@ -173,7 +173,7 @@ export default function Home() {
         </section>
 
         <section className="follow-me">
-          <h3 className="rainbow-text">Unbelievable Social Media!</h3>
+          <h3 className="rainbow-text">Breathtaking Social Media!</h3>
 
           <a
             href="https://twitter.com/PatricVenturini"
