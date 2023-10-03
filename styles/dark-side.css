@@ -77,6 +77,27 @@ main.dark-side {
   --pattern-shadow-y: 1;
 }
 
+
+
+.patric-secrets {
+  width: 80%;
+  margin: 0 auto 20px;
+  min-height: 108px;
+  padding: 16px;
+  font-size: 17px;
+  border-radius: 5px;
+  background: #3e3e3e;
+  color: #01fe87;
+}
+
+.ask-oracle-button {
+  display: block;
+  margin: 0 auto;
+  padding: 8px;
+  border: none;
+  border-radius: 2px;
+}
+
 @keyframes blueUp {
   to {
     color: #252839;
@@ -108,3 +129,4 @@ main.dark-side {
     transform: rotateZ(1100deg) translate3d(45px, -45px, 0);
   }
 }
+
